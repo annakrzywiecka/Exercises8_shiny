@@ -8,16 +8,13 @@
 #
 
 library(shiny)
-moje_dane <- read.csv("TPMs_table_100genes.csv")
+moje_dane <- read.csv("/home/ania/Documents/advancedToolkit/cw8/App_5/TPMs_table_100genes.csv")
 genechoices = moje_dane$GeneID
 
-# Define UI for application that draws a histogram
-fluidPage(
 
-    # Application title
+fluidPage(
     titlePanel("GENE expression"),
 
-    # Sidebar with a slider input for number of bins
     sidebarLayout(
       selectInput(
         'GENE',
